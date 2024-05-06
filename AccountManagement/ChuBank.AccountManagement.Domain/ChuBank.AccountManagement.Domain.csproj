@@ -7,8 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Services\BankAccountService.cs" />
+    <Compile Remove="Services\BankClientService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Services\BankAccountService.cs" />
+    <None Include="Services\BankClientService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Kernel\ChuBank.Kernel.Domain\ChuBank.Kernel.Domain.csproj" />
     <ProjectReference Include="..\ChuBank.AccountManagement.Domain.Model\ChuBank.AccountManagement.Domain.Model.csproj" />
-    <ProjectReference Include="..\ChuBank.Kernel.Domain\ChuBank.Kernel.Domain.csproj" />
   </ItemGroup>
 
 </Project>

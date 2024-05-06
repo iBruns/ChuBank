@@ -1,4 +1,4 @@
-﻿namespace ChuBank.Kernel.Model
+﻿namespace Chbank.Kernel.Infra
 {
     public class Class1
     {

@@ -5,8 +5,6 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccountManagement", "AccountManagement", "{30123AAC-F270-40A9-B684-DB51B11879AF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kernel", "Kernel", "{7811C418-F306-4856-9CE3-0724C323BD80}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChuBank.AccountManagement.Domain", "ChuBank.AccountManagement.Domain\ChuBank.AccountManagement.Domain.csproj", "{BFDB730D-3DF5-4F68-BD74-6BCE5DE4FF9B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChuBank.AccountManagement.Domain.Model", "ChuBank.AccountManagement.Domain.Model\ChuBank.AccountManagement.Domain.Model.csproj", "{D49C0676-C71A-4704-B499-6F4F271B5E7C}"
@@ -17,13 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChuBank.AccountManagement.T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChuBank.AccountManagement.Api", "ChuBank.AccountManagement.Api\ChuBank.AccountManagement.Api.csproj", "{E665B50B-9B63-4D8C-A1FD-2317D2ACE81F}"
 EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "chubank.accountmanagement.Front", "ChuBank.AccountManagement.Front\chubank.accountmanagement.Front.esproj", "{2046A464-D0B2-4A6E-B1D9-9A78A3A3C511}"
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "chubank.Accountmanagement.Front", "ChuBank.AccountManagement.Front\chubank.Accountmanagement.Front.esproj", "{2046A464-D0B2-4A6E-B1D9-9A78A3A3C511}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuBank.Kernel.Domain", "ChuBank.Kernel.Domain\ChuBank.Kernel.Domain.csproj", "{5182AADF-6559-435D-BDF0-7F30F6BB71DB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kernel", "Kernel", "{CF738E4A-CA79-48A6-B1E6-FE442398DB5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuBank.Kernel.Domain.Model", "ChuBank.Kernel.Domain.Model\ChuBank.Kernel.Domain.Model.csproj", "{CE4F0CA3-956B-4305-8386-A0106CD467F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChuBank.Kernel.Infra", "..\Kernel\Chbank.Kernel.Infra\ChuBank.Kernel.Infra.csproj", "{776F7951-8674-4E99-9C45-1F75C87EC4C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuBank.Kernel.Infra", "ChuBank.Kernel.Infra\ChuBank.Kernel.Infra.csproj", "{7B758722-C24D-4AA0-BC18-7DBC3ACBDD6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChuBank.Kernel.Domain", "..\Kernel\ChuBank.Kernel.Domain\ChuBank.Kernel.Domain.csproj", "{A6A7C1EE-676A-4253-AB8B-43AF6B9BEE4D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChuBank.Kernel.Domain.Model", "..\Kernel\ChuBank.Kernel.Domain.Model\ChuBank.Kernel.Domain.Model.csproj", "{71DA26A3-7E0B-4155-AF80-B38820DA6AB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,18 +57,18 @@ Global
 		{2046A464-D0B2-4A6E-B1D9-9A78A3A3C511}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2046A464-D0B2-4A6E-B1D9-9A78A3A3C511}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2046A464-D0B2-4A6E-B1D9-9A78A3A3C511}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{5182AADF-6559-435D-BDF0-7F30F6BB71DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5182AADF-6559-435D-BDF0-7F30F6BB71DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5182AADF-6559-435D-BDF0-7F30F6BB71DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5182AADF-6559-435D-BDF0-7F30F6BB71DB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CE4F0CA3-956B-4305-8386-A0106CD467F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE4F0CA3-956B-4305-8386-A0106CD467F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE4F0CA3-956B-4305-8386-A0106CD467F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE4F0CA3-956B-4305-8386-A0106CD467F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7B758722-C24D-4AA0-BC18-7DBC3ACBDD6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B758722-C24D-4AA0-BC18-7DBC3ACBDD6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B758722-C24D-4AA0-BC18-7DBC3ACBDD6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B758722-C24D-4AA0-BC18-7DBC3ACBDD6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{776F7951-8674-4E99-9C45-1F75C87EC4C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{776F7951-8674-4E99-9C45-1F75C87EC4C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{776F7951-8674-4E99-9C45-1F75C87EC4C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{776F7951-8674-4E99-9C45-1F75C87EC4C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6A7C1EE-676A-4253-AB8B-43AF6B9BEE4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A7C1EE-676A-4253-AB8B-43AF6B9BEE4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A7C1EE-676A-4253-AB8B-43AF6B9BEE4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A7C1EE-676A-4253-AB8B-43AF6B9BEE4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71DA26A3-7E0B-4155-AF80-B38820DA6AB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71DA26A3-7E0B-4155-AF80-B38820DA6AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71DA26A3-7E0B-4155-AF80-B38820DA6AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71DA26A3-7E0B-4155-AF80-B38820DA6AB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,9 +80,9 @@ Global
 		{1B1DE520-7091-4847-8C7F-960721C46BD6} = {30123AAC-F270-40A9-B684-DB51B11879AF}
 		{E665B50B-9B63-4D8C-A1FD-2317D2ACE81F} = {30123AAC-F270-40A9-B684-DB51B11879AF}
 		{2046A464-D0B2-4A6E-B1D9-9A78A3A3C511} = {30123AAC-F270-40A9-B684-DB51B11879AF}
-		{5182AADF-6559-435D-BDF0-7F30F6BB71DB} = {7811C418-F306-4856-9CE3-0724C323BD80}
-		{CE4F0CA3-956B-4305-8386-A0106CD467F0} = {7811C418-F306-4856-9CE3-0724C323BD80}
-		{7B758722-C24D-4AA0-BC18-7DBC3ACBDD6E} = {7811C418-F306-4856-9CE3-0724C323BD80}
+		{776F7951-8674-4E99-9C45-1F75C87EC4C4} = {CF738E4A-CA79-48A6-B1E6-FE442398DB5A}
+		{A6A7C1EE-676A-4253-AB8B-43AF6B9BEE4D} = {CF738E4A-CA79-48A6-B1E6-FE442398DB5A}
+		{71DA26A3-7E0B-4155-AF80-B38820DA6AB6} = {CF738E4A-CA79-48A6-B1E6-FE442398DB5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB3D1D4B-E735-4C76-A356-A84AE41FFD96}
