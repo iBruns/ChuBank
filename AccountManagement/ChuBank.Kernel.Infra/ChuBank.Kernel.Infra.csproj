@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ChuBank.AccountManagement.Domain.Model\ChuBank.AccountManagement.Domain.Model.csproj" />
     <ProjectReference Include="..\ChuBank.Kernel.Domain\ChuBank.Kernel.Domain.csproj" />
   </ItemGroup>
 
